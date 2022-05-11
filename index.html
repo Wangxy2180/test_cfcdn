@@ -1,5 +1,32 @@
-<video controls>
-<!--   <source src="video-1.mp4" type="video/mp4"> -->
-  <source src="2019年度手机发布会.mp4" type="video/mp4">
-  </object> 
-</video>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ccs视频</title>
+</head>
+
+<body>
+    <a href="#" onClick="playedvideo(this)" id="使用方式讲解">使用方式讲解</a>
+    <a href="#" onClick="playedvideo(this)" id="数据库测试视频">数据库测试视频</a>
+    <br />
+    <div style="text-align:center;">
+        <video id="ccsVideo" width="75%" controls>
+            <source src="使用方式讲解.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        function playedvideo(a) {
+            var MV = document.getElementById("ccsVideo");
+            MV.src = a.id + '.mp4';
+            MV.play();
+        }
+    </script>
+
+
+</body>
+
+</html>
